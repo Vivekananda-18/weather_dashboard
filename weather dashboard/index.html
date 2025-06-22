@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,500;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exile&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montaga&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <div class="weather-input">
+            <div class="input-group">
+                <input type="text" id="userlocation" placeholder="enter location to search">
+                <i class="fa fa-search" onclick="finduserlocation()"></i>            
+            </div>
+
+            <div class="weathericon"></div>
+            <h2 class="temperature"></h2>
+            <div class="feellike"></div>
+            <div class="description"></div>
+            <hr>
+            <div class="city"></div>
+        </div>
+        <div class="weatheroutput">
+            <h1 class="heading">Today's Highlights</h1>
+            <br>
+                <div class="highlights">
+
+                    <div class="humidity">
+                        <h2>Humidity</h2>
+                        <i class="fa-solid fa-droplet"></i>
+                        <h1 id="Hvalue"></h1>
+                    </div>
+
+                    <div class="windSpeed">
+                        <h2>Wind Speed</h2>
+                        <i class="fa-solid fa-wind"></i>
+                        <h1 id="WSvalue"></h1>
+                    </div>
+
+                    <div class="clouds">
+                        <h2>Clouds</h2>
+                        <i class="fa-solid fa-cloud"></i>
+                        <h1 id="Cvalue"></h1>
+                    </div>
+
+                    <div class="pressure">
+                        <h2>Pressure</h2>
+                        <i class="fa-solid fa-volcano"></i>
+                        <h1 id="Pvalue"></h1>
+                    </div>
+        
+                </div>
+                <br>
+            <h1 class="heading">5 Day Forecast</h1>
+            <div class="forecast-container"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+
+
+</html>
